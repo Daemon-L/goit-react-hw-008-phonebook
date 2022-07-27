@@ -11,7 +11,7 @@ const UserMenu = () => {
 
     return (
         <MenuConteiner>
-            <Text>welcom, {name}</Text>
+            <Text>welcome, {name}</Text>
             <Button variant="primary" type="button" onClick={() => dispatch(authOperations.logOut())}>
                 Logout
             </Button>
