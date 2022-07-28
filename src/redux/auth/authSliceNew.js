@@ -35,6 +35,9 @@ const authSlice = createSlice({
       state.isLoggedIn = true;
       state.isFetchingCurrentUser = false;
     },
+    [authOperations.logOut.rejected](state) {
+      state.isFetchingCurrentUser = false;
+    },
   },
 });
 export default authSlice.reducer;
